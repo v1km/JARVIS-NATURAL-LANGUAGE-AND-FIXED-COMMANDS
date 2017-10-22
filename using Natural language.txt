@@ -1,0 +1,65 @@
+This text is  useful for using your personal assistant aka Jarvis with any command rather than the fixed one in README file.
+This is Done using NATURAL LANGUAGE PROCESSING  WITH HELP OF OF AUTOVOICE ,IFTTT AND GOOGLE DIALOG BOX.
+You can also Enable your commands using your pc by just adding autovoice extensions in chrome.
+
+NATURAL LANGUAGE:(wiki)
+Natural language programming (NLP) is an ontology-assisted way of programming in terms of natural language sentences.
+ e.g. English. A structured document with Content, sections and subsections for explanations of sentences forms a NLP document,
+ which is actually a computer program. Natural languages and natural language user interfaces include Inform7,
+ a natural programming language for making interactive fiction, Ring, a general purpose language, 
+Shakespeare, an esoteric natural programming language in the style of the plays of William Shakespeare, and Wolfram Alpha,
+ a computational knowledge engine, using natural language input.
+
+Steps:
+1. Pair with bluetooth device whom you want to send commands.
+2. The bluetooth will be connected to microontroller(arduino) which will perform several tasks as per our commands.For pins, refer README
+3. Open the AutoVoice app for commands using natural language.
+4. Add the bluetooth device in AutoVoice Devices section
+5. After that, go back and click natural languages and using the references given go to dialog box of Artificial intelligence website
+   and register and follow the tutorial given in app.
+6. Sign in for IFTTT free account and paste the credentials of your url into the app.
+7. Do the same for client token and developer acces token and apply it in app.
+8. You can give voice commands from desktop as well as from app.
+9. Give commands manually once and set the code to be sent from app according to code signals given below.
+
+
+Now your device has the command in it.The further step is the stage where Natural Language is in the picture for processing commands.
+Create and edit your commands in such a way that your device are turned on.
+Eg:
+If you Say "Turn on the LIGHT" or "Switch on the LIGHT" , "PLease make that LIGHT on",etc
+these commands,their tasks mean the same but the words are different which can mislead the arduino.
+So we have to Set our command in app such that it extracts the keyword which can directly be decoded to task's action.
+In this eg, the keyword will be "on" and "light" which the natural laguage can detect and send a unique code for the same.
+
+In this way, it can be done for all the other modules ie devices connected using autovoice powered by NLP.
+
+The same Procedure can also be done using chrome installed in your  pc.
+Even there you can Set your commands and keywords.
+
+According to arduino code,set the code for decoded command in AutoVoice app:
+//Commands:
+//Turn on the light - 1
+//Turn off the light - 2 
+//Turn on the fan - 3 
+//Turn off the fan - 4 
+//Turn on the Tv - 5
+//Turn off the Tv - 6
+//Turn on the AC - 7 
+//Turn off the AC - 8
+//Open the door - 9 
+//Close the door  - 0
+
+
+
+
+SET unique code for each keyword With respective command and send it to bluetooth via the app.
+
+IFTTT:
+Iftt contains applets which can be connected through autovoice and ifttt app .
+you can start by using already available applets and get to work by just applying it.(assumed you have logged with required credentialsby following steps.) 
+Some eg are ,'turn off the bluetooth when battery is low','send an tweet when mail is recieved , etc.
+
+Conclusion:
+Artificial intelligence implemented using natural language is implemented using autovoice app and dialog box of google.
+
+  
